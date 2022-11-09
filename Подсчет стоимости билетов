@@ -1,0 +1,15 @@
+ticket = int(input('Сколько билетов Вы хотите купить?'))
+guest = [int(input("Введите возраст посетителя:")) for i in range(ticket)]
+price=0
+for i in range(len(guest)):
+    if guest [i] < 18:
+       price+=0
+    elif guest [i] <= 25:
+         price+=990
+    else:
+        guest [i] >= 25
+        price+=1390
+        if ticket >=3:
+            price=(price*0.9)
+
+print ("Сумма к оплате c учетом скидки: " ,price, )
